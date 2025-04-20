@@ -31,3 +31,5 @@ jobs:
         run: |
           # Validate all HTML files with the correct root directory
           html5validator --root ./  --also-check-css --also-check-svg || echo "HTML Validation failed"
+
+          
