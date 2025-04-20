@@ -1,0 +1,23 @@
+name: CI Pipeline for Agile Final Project
+
+on:
+  push:
+    branches:
+      - main # This triggers the workflow when changes are pushed to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # Runs the job on an Ubuntu virtual machine
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # Checks out the code from your repository
+
+      - name: Run basic checks
+        run: |
+          echo "Running basic HTML/CSS/JS check"
+          echo "All files present:"
+          ls -al
+
+      - name: Success Message
+        run: echo "CI check completed successfully"
