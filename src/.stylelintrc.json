@@ -3,7 +3,7 @@
     "rules": {
       "color-function-notation": "modern",
       "alpha-value-notation": "percentage",
-      "color-function-alias-notation": "modern",
+      "color-function-alias-notation": "without-alpha",
       "color-hex-length": "short",
       "selector-class-pattern": "^[a-z0-9\\-]+$",
       "selector-id-pattern": "^[a-z0-9\\-]+$",
