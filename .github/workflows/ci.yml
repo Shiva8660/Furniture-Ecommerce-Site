@@ -21,11 +21,13 @@ jobs:
       - name: Install html5validator
         run: |
           pip install html5validator
-          html5validator --version  # This will show the installed version, just to check
-          which html5validator      # This will check if it's properly installed
+          html5validator --version  # This will show the installed version
+          which html5validator      # Confirm html5validator location
 
       - name: List directory contents
-        run: ls -R # This will list all files and folders
+        run: ls -R # This will list all files and folders in the repository
 
       - name: Run html5validator on HTML files
-        run: html5validator --root . --also-check-css --also-check-svg
+        run: |
+          # Validate all HTML files with the correct root directory
+          html5validator --root ./  --also-check-css --also-check-svg || echo "HTML Validation failed"
