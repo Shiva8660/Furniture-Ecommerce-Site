@@ -4,54 +4,30 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
-
     steps:
-    # Step 1: Checkout the code
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    # Step 2: Set up Node.js for linting tools
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'  # You can adjust the Node version based on your project
+      - name: Validate HTML files
+        uses: wagoid/commitlint-github-action@v3
+        with:
+          configFile: ".github/commitlint-config"
 
-    # Step 3: Install dependencies for stylelint (CSS) and eslint (JavaScript)
-    - name: Install dependencies
-      run: |
-        npm install -g stylelint stylelint-config-standard eslint jsonlint
-
-    # Step 4: Run stylelint on CSS files
-    - name: Run stylelint on CSS files
-      run: |
-        stylelint "**/*.css" || echo "CSS Validation failed"
-
-<<<<<<< HEAD
-    # Step 5: Run eslint on JavaScript files
-    - name: Run eslint on JavaScript files
-      run: |
-        eslint "**/*.js" || echo "JavaScript Validation failed"
-
-    # Step 6: Validate JSON files
-    - name: Validate JSON files
-      run: |
-        jsonlint "**/*.json" || echo "JSON Validation failed"
-
-    # Step 7: List directory contents for debugging
-    - name: List directory contents
-      run: ls -R  # This will list all files and folders to help you debug if needed
-=======
-      - name: Run html5validator on HTML files
+      - name: Validate CSS files
         run: |
-          # Validate all HTML files with the correct root directory
-          html5validator --root ./  --also-check-css --also-check-svg || echo "HTML Validation failed"
+          npm install -g stylelint
+          stylelint "**/*.css"
 
-          
->>>>>>> 7143234e4de71af0eec675e5a41779e29cdf83c4
+      - name: Validate JS files
+        run: |
+          npm install -g eslint
+          eslint "**/*.js"
+
+      - name: Validate JSON files
+        run: |
+          npm install -g jsonlint
+          jsonlint "**/*.json"
