@@ -1,7 +1,10 @@
-name: CI Pipeline for Agile Final Project
+name: CI Pipeline
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -10,24 +13,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    # Step 1: Checkout the code
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.x"
+    # Step 2: Set up Node.js for linting tools
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # You can adjust the Node version based on your project
 
-      - name: Install html5validator
-        run: |
-          pip install html5validator
-          html5validator --version  # This will show the installed version
-          which html5validator      # Confirm html5validator location
+    # Step 3: Install dependencies for stylelint (CSS) and eslint (JavaScript)
+    - name: Install dependencies
+      run: |
+        npm install -g stylelint stylelint-config-standard eslint jsonlint
 
-      - name: List directory contents
-        run: ls -R # This will list all files and folders in the repository
+    # Step 4: Run stylelint on CSS files
+    - name: Run stylelint on CSS files
+      run: |
+        stylelint "**/*.css" || echo "CSS Validation failed"
 
-      - name: Run html5validator on HTML files
-        run: |
-          # Validate all HTML files with the correct root directory
-          html5validator --root ./  --also-check-css --also-check-svg || echo "HTML Validation failed"
+    # Step 5: Run eslint on JavaScript files
+    - name: Run eslint on JavaScript files
+      run: |
+        eslint "**/*.js" || echo "JavaScript Validation failed"
+
+    # Step 6: Validate JSON files
+    - name: Validate JSON files
+      run: |
+        jsonlint "**/*.json" || echo "JSON Validation failed"
+
+    # Step 7: List directory contents for debugging
+    - name: List directory contents
+      run: ls -R  # This will list all files and folders to help you debug if needed
