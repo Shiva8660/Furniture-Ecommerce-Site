@@ -33,6 +33,7 @@ jobs:
       run: |
         stylelint "**/*.css" || echo "CSS Validation failed"
 
+<<<<<<< HEAD
     # Step 5: Run eslint on JavaScript files
     - name: Run eslint on JavaScript files
       run: |
@@ -46,3 +47,11 @@ jobs:
     # Step 7: List directory contents for debugging
     - name: List directory contents
       run: ls -R  # This will list all files and folders to help you debug if needed
+=======
+      - name: Run html5validator on HTML files
+        run: |
+          # Validate all HTML files with the correct root directory
+          html5validator --root ./  --also-check-css --also-check-svg || echo "HTML Validation failed"
+
+          
+>>>>>>> 7143234e4de71af0eec675e5a41779e29cdf83c4
