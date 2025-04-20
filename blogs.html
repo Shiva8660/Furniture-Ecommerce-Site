@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionTrend | Blogs</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <style>
+        .blog-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .blog-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .blog-excerpt {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #555;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 2rem 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <h1>FashionTrend</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blogs.html" class="active">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="blog-container">
+        <h1 class="page-title">Furniture & Interior Design Blog</h1>
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <article class="blog-card">
+                <img src="image/Interior Design Trends 2025.jpeg" alt="Interior Design Trends 2025" class="blog-image">
+                <div class="blog-content">
+                    <h2 class="blog-title">Interior Design Trends 2025</h2>
+                    <p class="blog-excerpt">Explore the latest interior design trends that will transform homes in 2025. From sustainable materials to smart furniture solutions.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-card">
+                <img src="image/Sustainable Furniture Guide.jpeg" alt="Sustainable Furniture Guide" class="blog-image">
+                <div class="blog-content">
+                    <h2 class="blog-title">Sustainable Furniture Guide</h2>
+                    <p class="blog-excerpt">Discover eco-friendly furniture options and learn how to create a sustainable home environment without compromising on style.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-card">
+                <img src="image/Space-Saving Furniture Solutions.jpeg" alt="Space-Saving Furniture Solutions" class="blog-image">
+                <div class="blog-content">
+                    <h2 class="blog-title">Space-Saving Furniture Solutions</h2>
+                    <p class="blog-excerpt">Maximize your living space with clever furniture choices and smart arrangement tips for any room size.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-card">
+                <img src="image/Bedroom Design Essentials.jpeg" alt="Bedroom Design Essentials" class="blog-image">
+                <div class="blog-content">
+                    <h2 class="blog-title">Bedroom Design Essentials</h2>
+                    <p class="blog-excerpt">Create the perfect bedroom sanctuary with our comprehensive guide to furniture selection and arrangement.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 5 -->
+            <article class="blog-card">
+                <img src="image/Dining Room Design Guide.jpeg" alt="Dining Room Design Guide" class="blog-image">
+                <div class="blog-content">
+                    <h2 class="blog-title">Dining Room Design Guide</h2>
+                    <p class="blog-excerpt">Transform your dining space into an inviting gathering place with the right furniture and decor choices.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 6 -->
+            <article class="blog-card">
+                <img src="image/Outdoor Furniture Trends.jpeg" alt="Outdoor Furniture Trends" class="blog-image">
+                <div class="blog-content">
+                    <h2 class="blog-title">Outdoor Furniture Trends</h2>
+                    <p class="blog-excerpt">Create the perfect outdoor living space with weather-resistant furniture and stylish patio design ideas.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 7 -->
+            <article class="blog-card">
+                <img src="image/Vintage Furniture Revival.jpeg" alt="Vintage Furniture Revival" class="blog-image">
+                <div class="blog-content">
+                    <h2 class="blog-title">Vintage Furniture Revival</h2>
+                    <p class="blog-excerpt">Learn how to incorporate vintage furniture pieces into modern interiors for a unique and timeless look.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 8 -->
+            <article class="blog-card">
+                <img src="image/Home Office Setup Guide.jpeg" alt="Home Office Setup Guide" class="blog-image">
+                <div class="blog-content">
+                    <h2 class="blog-title">Home Office Setup Guide</h2>
+                    <p class="blog-excerpt">Create a productive and comfortable home office with the right furniture and ergonomic considerations.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 9 -->
+            <article class="blog-card">
+                <img src="image/Smart Furniture Innovation.jpeg" alt="Smart Furniture Innovation" class="blog-image">
+                <div class="blog-content">
+                    <h2 class="blog-title">Smart Furniture Innovation</h2>
+                    <p class="blog-excerpt">Discover how technology is revolutionizing furniture design and creating smarter, more functional living spaces.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="image/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="image/pay/app.jpg" alt="">
+                <img src="image/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways </p>
+            <img src="image/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 FashionTrend | Designed with ❤️ for fashion lovers.</p>
+        </div>
+    </footer>
+</body>
+</html>

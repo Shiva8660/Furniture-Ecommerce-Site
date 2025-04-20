@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "category": "Chairs",
+    "name": "LD01 LOUNGE CHAIR",
+    "price": 200,
+    "image": "image/1.png"
+  },
+  {
+    "id": 2,
+    "category": "Chairs",
+    "name": "LD02 LOUNGE CHAIR",
+    "price": 250,
+    "image": "image/2.png"
+  },
+  {
+    "id": 3,
+    "category": "Chairs",
+    "name": "LD03 LOUNGE CHAIR",
+    "price": 290,
+    "image": "image/3.png"
+  },
+  {
+    "id": 4,
+    "category": "Chairs",
+    "name": "LD04 LOUNGE CHAIR",
+    "price": 200,
+    "image": "image/4.png"
+  },
+  {
+    "id": 5,
+    "category": "Chairs",
+    "name": "LD05 LOUNGE CHAIR",
+    "price": 300,
+    "image": "image/5.png"
+  },
+  {
+    "id": 6,
+    "category": "Chairs",
+    "name": "LD06 LOUNGE CHAIR",
+    "price": 200,
+    "image": "image/6.png"
+  },
+  {
+    "id": 7,
+    "category": "Chairs",
+    "name": "LD07 LOUNGE CHAIR",
+    "price": 200,
+    "image": "image/7.png"
+  },
+  {
+    "id": 8,
+    "category": "Chairs",
+    "name": "LD08 LOUNGE CHAIR",
+    "price": 200,
+    "image": "image/8.png"
+  },
+  {
+    "id": 9,
+    "category": "Tables",
+    "name": "Modern Coffee Table",
+    "price": 350,
+    "image": "image/Modern Coffee Table.png"
+  },
+  {
+    "id": 10,
+    "category": "Tables",
+    "name": "Glass Dining Table",
+    "price": 600,
+    "image": "image/Glass Dining Table.png"
+  },
+  {
+    "id": 11,
+    "category": "Tables",
+    "name": "Wooden Side Table",
+    "price": 150,
+    "image": "image/Wooden Side Table.png"
+  },
+  {
+    "id": 12,
+    "category": "Tables",
+    "name": "Round Accent Table",
+    "price": 200,
+    "image": "image/Round Accent Table.png"
+  },
+  {
+    "id": 13,
+    "category": "Tables",
+    "name": "Console Table",
+    "price": 280,
+    "image": "image/Console Table.png"
+  },
+  {
+    "id": 14,
+    "category": "Tables",
+    "name": "Extendable Dining Table",
+    "price": 800,
+    "image": "image/Extendable Dining Table.png"
+  },
+  {
+    "id": 15,
+    "category": "Tables",
+    "name": "Marble Top Table",
+    "price": 450,
+    "image": "image/Marble Top Table.png"
+  },
+  {
+    "id": 16,
+    "category": "Tables",
+    "name": "Nested Coffee Tables",
+    "price": 300,
+    "image": "image/Nested Coffee Tables.png"
+  },
+  {
+    "id": 17,
+    "category": "Sofas",
+    "name": "Modern Sectional Sofa",
+    "price": 1200,
+    "image": "image/Modern Sectional Sofa.png"
+  },
+  {
+    "id": 18,
+    "category": "Sofas",
+    "name": "Leather Loveseat",
+    "price": 800,
+    "image": "image/Leather Loveseat.png"
+  },
+  {
+    "id": 19,
+    "category": "Sofas",
+    "name": "Convertible Futon",
+    "price": 400,
+    "image": "image/Convertible Futon.png"
+  },
+  {
+    "id": 20,
+    "category": "Sofas",
+    "name": "Chesterfield Sofa",
+    "price": 1500,
+    "image": "image/Chesterfield Sofa.png"
+  },
+  {
+    "id": 21,
+    "category": "Sofas",
+    "name": "Reclining Sofa",
+    "price": 1100,
+    "image": "image/Reclining Sofa.png"
+  },
+  {
+    "id": 22,
+    "category": "Sofas",
+    "name": "Corner Sectional",
+    "price": 1800,
+    "image": "image/Corner Sectional.png"
+  },
+  {
+    "id": 23,
+    "category": "Sofas",
+    "name": "Modular Sofa Set",
+    "price": 2000,
+    "image": "image/Modular Sofa Set.png"
+  },
+  {
+    "id": 24,
+    "category": "Sofas",
+    "name": "Sleeper Sofa",
+    "price": 900,
+    "image": "image/Sleeper Sofa.png"
+  },
+  {
+    "id": 25,
+    "category": "Beds",
+    "name": "Platform Queen Bed",
+    "price": 700,
+    "image": "image/Platform Queen Bed.png"
+  },
+  {
+    "id": 26,
+    "category": "Beds",
+    "name": "Twin Bunk Bed",
+    "price": 900,
+    "image": "image/Twin Bunk Bed.png"
+  },
+  {
+    "id": 27,
+    "category": "Beds",
+    "name": "Canopy King Bed",
+    "price": 1200,
+    "image": "image/Canopy King Bed.png"
+  },
+  {
+    "id": 28,
+    "category": "Beds",
+    "name": "Storage Platform Bed",
+    "price": 800,
+    "image": "image/Storage Platform Bed.png"
+  },
+  {
+    "id": 29,
+    "category": "Beds",
+    "name": "Upholstered Bed",
+    "price": 600,
+    "image": "image/Upholstered Bed.png"
+  },
+  {
+    "id": 30,
+    "category": "Beds",
+    "name": "Loft Bed with Desk",
+    "price": 1000,
+    "image": "image/Loft Bed with Desk.png"
+  },
+  {
+    "id": 31,
+    "category": "Beds",
+    "name": "Sleigh Bed",
+    "price": 850,
+    "image": "image/Sleigh Bed.png"
+  },
+  {
+    "id": 32,
+    "category": "Beds",
+    "name": "Daybed with Trundle",
+    "price": 750,
+    "image": "image/Daybed with Trundle.png"
+  },
+  {
+    "id": 33,
+    "category": "Storage",
+    "name": "Large Wardrobe",
+    "price": 600,
+    "image": "image/Large Wardrobe.jpg"
+  },
+  {
+    "id": 34,
+    "category": "Storage",
+    "name": "Display Cabinet",
+    "price": 400,
+    "image": "image/Display Cabinet.png"
+  },
+  {
+    "id": 35,
+    "category": "Storage",
+    "name": "Chest of Drawers",
+    "price": 350,
+    "image": "image/Chest of Drawers.jpg"
+  },
+  {
+    "id": 36,
+    "category": "Storage",
+    "name": "Storage Bench",
+    "price": 200,
+    "image": "image/Storage Bench.png"
+  },
+  {
+    "id": 37,
+    "category": "Storage",
+    "name": "Shoe Cabinet",
+    "price": 180,
+    "image": "image/Shoe Cabinet.png"
+  },
+  {
+    "id": 38,
+    "category": "Storage",
+    "name": "Sideboard",
+    "price": 450,
+    "image": "image/Sideboard.png"
+  },
+  {
+    "id": 39,
+    "category": "Storage",
+    "name": "Utility Cabinet",
+    "price": 300,
+    "image": "image/Utility Cabinet.png"
+  },
+  {
+    "id": 40,
+    "category": "Storage",
+    "name": "Armoire",
+    "price": 700,
+    "image": "image/Armoire.png"
+  },
+  {
+    "id": 41,
+    "category": "Desks",
+    "name": "Writing Desk",
+    "price": 250,
+    "image": "image/Writing Desk.png"
+  },
+  {
+    "id": 42,
+    "category": "Desks",
+    "name": "Computer Desk",
+    "price": 300,
+    "image": "image/Computer Desk.png"
+  },
+  {
+    "id": 43,
+    "category": "Desks",
+    "name": "Standing Desk",
+    "price": 500,
+    "image": "image/Standing Desk.png"
+  },
+  {
+    "id": 44,
+    "category": "Desks",
+    "name": "L-Shaped Desk",
+    "price": 400,
+    "image": "image/L-Shaped Desk.png"
+  },
+  {
+    "id": 45,
+    "category": "Desks",
+    "name": "Secretary Desk",
+    "price": 350,
+    "image": "image/Secretary Desk.png"
+  },
+  {
+    "id": 46,
+    "category": "Desks",
+    "name": "Gaming Desk",
+    "price": 450,
+    "image": "image/Gaming Desk.png"
+  },
+  {
+    "id": 47,
+    "category": "Desks",
+    "name": "Corner Desk",
+    "price": 280,
+    "image": "image/Corner Desk.png"
+  },
+  {
+    "id": 48,
+    "category": "Desks",
+    "name": "Executive Desk",
+    "price": 600,
+    "image": "image/Executive Desk.png"
+  },
+  {
+    "id": 49,
+    "category": "Shelves",
+    "name": "Wall Mounted Shelf",
+    "price": 100,
+    "image": "image/Wall Mounted Shelf.png"
+  },
+  {
+    "id": 50,
+    "category": "Shelves",
+    "name": "Ladder Bookcase",
+    "price": 180,
+    "image": "image/Ladder Bookcase.png"
+  },
+  {
+    "id": 51,
+    "category": "Shelves",
+    "name": "Floating Shelves Set",
+    "price": 120,
+    "image": "image/Floating Shelves Set.png"
+  },
+  {
+    "id": 52,
+    "category": "Shelves",
+    "name": "Corner Bookshelf",
+    "price": 150,
+    "image": "image/Corner Bookshelf.png"
+  },
+  {
+    "id": 53,
+    "category": "Shelves",
+    "name": "Cube Organizer",
+    "price": 90,
+    "image": "image/Cube Organizer.png"
+  },
+  {
+    "id": 54,
+    "category": "Shelves",
+    "name": "Industrial Bookcase",
+    "price": 200,
+    "image": "image/Industrial Bookcase.png"
+  },
+  {
+    "id": 55,
+    "category": "Shelves",
+    "name": "Display Shelf Unit",
+    "price": 160,
+    "image": "image/Display Shelf Unit.png"
+  },
+  {
+    "id": 56,
+    "category": "Shelves",
+    "name": "Tree Bookshelf",
+    "price": 140,
+    "image": "image/Tree Bookshelf.png"
+  },
+  {
+    "id": 57,
+    "category": "TV Units",
+    "name": "Modern TV Stand",
+    "price": 300,
+    "image": "image/Modern TV Stand.png"
+  },
+  {
+    "id": 58,
+    "category": "TV Units",
+    "name": "Entertainment Center",
+    "price": 500,
+    "image": "image/Entertainment Center.png"
+  },
+  {
+    "id": 59,
+    "category": "TV Units",
+    "name": "Floating TV Console",
+    "price": 250,
+    "image": "image/Floating TV Console.png"
+  },
+  {
+    "id": 60,
+    "category": "TV Units",
+    "name": "Corner TV Cabinet",
+    "price": 280,
+    "image": "image/Corner TV Cabinet.png"
+  },
+  {
+    "id": 61,
+    "category": "TV Units",
+    "name": "Media Storage Unit",
+    "price": 350,
+    "image": "image/Media Storage Unit.png"
+  },
+  {
+    "id": 62,
+    "category": "TV Units",
+    "name": "TV Cabinet with Drawers",
+    "price": 400,
+    "image": "image/TV Cabinet with Drawers.png"
+  },
+  {
+    "id": 63,
+    "category": "TV Units",
+    "name": "Glass TV Stand",
+    "price": 320,
+    "image": "image/Glass TV Stand.png"
+  },
+  {
+    "id": 64,
+    "category": "TV Units",
+    "name": "Industrial TV Console",
+    "price": 380,
+    "image": "image/Industrial TV Console.png"
+  },
+  {
+    "id": 65,
+    "category": "Outdoor",
+    "name": "Patio Dining Set",
+    "price": 800,
+    "image": "image/Patio Dining Set.png"
+  },
+  {
+    "id": 66,
+    "category": "Outdoor",
+    "name": "Garden Bench",
+    "price": 200,
+    "image": "image/Garden Bench.png"
+  },
+  {
+    "id": 67,
+    "category": "Outdoor",
+    "name": "Lounge Chair Set",
+    "price": 600,
+    "image": "image/Lounge Chair Set.png"
+  },
+  {
+    "id": 68,
+    "category": "Outdoor",
+    "name": "Conversation Set",
+    "price": 1000,
+    "image": "image/Conversation Set.png"
+  },
+  {
+    "id": 69,
+    "category": "Outdoor",
+    "name": "Bistro Set",
+    "price": 300,
+    "image": "image/Bistro Set.png"
+  },
+  {
+    "id": 70,
+    "category": "Outdoor",
+    "name": "Adirondack Chair",
+    "price": 150,
+    "image": "image/Adirondack Chair.png"
+  },
+  {
+    "id": 71,
+    "category": "Outdoor",
+    "name": "Swing Chair",
+    "price": 250,
+    "image": "image/Swing Chair.png"
+  },
+  {
+    "id": 72,
+    "category": "Outdoor",
+    "name": "Storage Deck Box",
+    "price": 180,
+    "image": "image/Storage Deck Box.png"
+  },
+  {
+    "id": 73,
+    "category": "Dining Sets",
+    "name": "6-Piece Dining Set",
+    "price": 1200,
+    "image": "image/6-Piece Dining Set.png"
+  },
+  {
+    "id": 74,
+    "category": "Dining Sets",
+    "name": "Counter Height Set",
+    "price": 800,
+    "image": "image/Counter Height Set.png"
+  },
+  {
+    "id": 75,
+    "category": "Dining Sets",
+    "name": "Breakfast Nook Set",
+    "price": 500,
+    "image": "image/Breakfast Nook Set.png"
+  },
+  {
+    "id": 76,
+    "category": "Dining Sets",
+    "name": "Round Table Set",
+    "price": 700,
+    "image": "image/Round Table Set.png"
+  },
+  {
+    "id": 77,
+    "category": "Dining Sets",
+    "name": "Farmhouse Dining Set",
+    "price": 1000,
+    "image": "image/Farmhouse Dining.png"
+  },
+  {
+    "id": 78,
+    "category": "Dining Sets",
+    "name": "Modern Glass Set",
+    "price": 900,
+    "image": "image/Modern Glass Set.png"
+  },
+  {
+    "id": 79,
+    "category": "Dining Sets",
+    "name": "Extendable Set",
+    "price": 1100,
+    "image": "image/Extendable Set.png"
+  },
+  {
+    "id": 80,
+    "category": "Dining Sets",
+    "name": "Compact Dining Set",
+    "price": 600,
+    "image": "image/Compact Dining Set.png"
+  }
+]

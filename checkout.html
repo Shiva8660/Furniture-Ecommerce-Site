@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .checkout-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .checkout-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .cart-summary {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .checkout-form {
+            background-color: #fff;
+            padding: 20px;
+            display: block;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #333;
+        }
+        .submit-order {
+            width: 100%;
+            padding: 12px;
+            background-color: #E8BC0E;
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .submit-order:hover {
+            background-color: #d4ac0d;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="checkout-header">
+            <h1>Checkout</h1>
+        </div>
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <div id="cartItems"></div>
+            <h3>Total: <span id="cartTotal">$0.00</span></h3>
+        </div>
+        <div class="checkout-form">
+            <h2>Shipping Details</h2>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="address" placeholder="Delivery Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="card" placeholder="Card Number" required>
+                </div>
+                <button type="submit" class="submit-order">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Get cart data from localStorage
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const products = JSON.parse(localStorage.getItem('products')) || [];
+
+        // Display cart items and calculate total
+        function displayCartSummary() {
+            const cartItemsDiv = document.getElementById('cartItems');
+            const cartTotalSpan = document.getElementById('cartTotal');
+            let total = 0;
+
+            cartItemsDiv.innerHTML = '';
+            cart.forEach(item => {
+                const product = products.find(p => p.id == item.product_id);
+                if (product) {
+                    const itemTotal = product.price * item.quantity;
+                    total += itemTotal;
+                    cartItemsDiv.innerHTML += `
+                        <div class="cart-item">
+                            <p>${product.name} x ${item.quantity} - $${itemTotal.toFixed(2)}</p>
+                        </div>
+                    `;
+                }
+            });
+
+            cartTotalSpan.textContent = `$${total.toFixed(2)}`;
+        }
+
+        // Handle form submission
+        document.getElementById('checkoutForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Basic card validation
+            const cardNumber = document.getElementById('card').value.replace(/\D/g, '');
+            if (cardNumber.length < 13 || cardNumber.length > 19) {
+                alert('Please enter a valid card number');
+                return;
+            }
+
+            try {
+                // Clear cart data
+                localStorage.removeItem('cart');
+                localStorage.setItem('cartCount', '0');
+                
+                // Show success message
+                alert('Order placed successfully!');
+                
+                // Ensure redirection happens after alert is closed
+                setTimeout(() => {
+                    window.location.replace('./shop.html');
+                }, 100);
+            } catch (error) {
+                console.error('Error during checkout:', error);
+                alert('An error occurred during checkout. Please try again.');
+            }
+        });
+
+        // Initialize page
+        displayCartSummary();
+    </script>
+</body>
+</html>
