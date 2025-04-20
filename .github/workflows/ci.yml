@@ -10,16 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Run basic checks
-        run: |
-          echo "Running basic HTML/CSS/JS check"
-          echo "All files present:"
-          ls -al
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
 
-      - name: Validate HTML files
-        uses: svenstaro/html5validator-action@v1.0.0
-        with:
-          directory: .
+    - name: Install html5validator
+      run: pip install html5validator
+
+    - name: Run html5validator on HTML files
+      run: html5validator --root . --also-check-css --also-check-svg
