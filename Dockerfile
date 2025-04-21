@@ -1,20 +1,17 @@
-# Use the official Node.js image from Docker Hub
-FROM node:16
+# Use an official Node.js base image (or Python for simple servers)
+FROM node:18-alpine
 
-# Set the working directory in the container
+# Set working directory
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files into the container
-COPY package*.json ./
-
-# Install project dependencies
-RUN npm install
-
-# Copy the rest of your application code into the container
+# Copy all files to container
 COPY . .
 
-# Expose the port your app will run on (e.g., 3000)
+# Install a simple HTTP server (like serve) to host static files
+RUN npm install -g serve
+
+# Expose port
 EXPOSE 3000
 
-# Command to run your app
-CMD ["npm", "start"]
+# Command to serve the site (assuming HTML/CSS/JS only)
+CMD ["serve", "-s", "src", "-l", "3000"]
