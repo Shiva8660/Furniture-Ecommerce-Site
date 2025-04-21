@@ -80,29 +80,5 @@ Push to Docker Hub
 docker tag fashiontrend your-dockerhub-username/fashiontrend:v1
 docker push your-dockerhub-username/fashiontrend:v1
 
-📁 Folder Structure
 
-Agile Final Project/
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-├── images/
-├── src/
-│   ├── index.html
-│   ├── homepage.html
-│   ├── shop.html
-│   ├── blogs.html
-│   ├── contact.html
-│   ├── aboutus.html
-│   ├── checkout.html
-│   ├── products.json
-│   ├── script.js
-│   ├── home.js
-│   ├── app.js
-│   ├── style.css
-│   ├── styles.css
-│   ├── footer.css
-│   ├── home.css
-│   ├── fontawesome.css
-│   └── run_server.py
 
